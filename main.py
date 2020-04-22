@@ -28,7 +28,7 @@ def main():
         letters, length = sys.argv[l-2], sys.argv[l-1]
         length = int(length)
 
-    except TypeError:
+    except ValueError:
         length, letters = letters, length
         length = int(length)
 
